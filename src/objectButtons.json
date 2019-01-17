@@ -1,0 +1,52 @@
+[
+	{
+		"id":"btnm",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"manzana",
+		"src":"https://www.comenaranjas.com/images/stories/virtuemart/product/manzana-royal.jpg"
+	},
+	{
+		"id":"btna",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"alubias",
+		"src":"https://t1.rg.ltmcdn.com/es/images/8/9/8/img_alubias_con_chorizo_con_thermomix_59898_600.jpg"
+	},
+	{
+		"id":"btndir_people",
+		"id_parent":"0",
+		"type": "symbol_dir",
+		"src" : "https://www.freeiconspng.com/uploads/folder-directory-icon-png-25.png",
+		"value":"1"
+	},
+	{
+		"id":"btnc",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"cerveza",
+		"src":"http://www.cocinayvino.com/wp-content/uploads/2017/03/48671378_l.jpg"
+	},
+	{
+		"id":"btnp",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"pera",
+		"src":"https://organizados.es/media/catalog/product/cache/1/image/736x460/9df78eab33525d08d6e5fb8d27136e95/p/e/pera_3.jpg"
+	},
+	{
+		"id":"btnpa",
+		"id_parent":"1",
+		"type": "symbol",
+		"value":"papuchi",
+		"src":"https://cdn.20m.es/img/2005/12/14/298431.jpg"
+	},
+	{
+		"id":"btnju",
+		"id_parent":"1",
+		"type": "symbol",
+		"value":"julito",
+		"src":"http://lafonoteca.net/wp-content/uploads/2008/07/julio-iglesias_closeup-wallpaper-500x375.jpg"
+	}
+]
+ 
