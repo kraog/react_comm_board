@@ -7,16 +7,16 @@ class App extends Component {
   render() {
   let elementors = Array.from([{id:'id1',
                     id_parent:'id_parent1',
-                    src:'dfgdtfgh',
+                    src:'https://blog.entelgy.com/wp-content/uploads/2014/02/Entelgy-Ibai-refuerza-el-equipo-comercial-Marco-Arevalo.jpg',
                     type:'',
                     value:'1'},{id:'id2',
                     id_parent:'id_parent2',
-                    src:'dfgdtfgh',
+                    src:'http://www.redestelecom.es/siteresources/files/514/54.JPG',
                     type:'',
                     value:'2'}]);
     return (
       <div className="App">
-      <Board id='idb' elems='elementors'/>
+      <Board id='idb' elems={elementors}/>
       </div>
     );
   }

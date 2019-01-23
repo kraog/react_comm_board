@@ -8,8 +8,8 @@ class Board extends Component {
 
 	render(){
 		return( 
-			React.createElement('div', {id: 'idss'},'hola'
-				/*this.props.elems.map(u => {
+			React.createElement('div', {id: 'idss'},'div',
+				this.props.elems.map(u => {
 		            return (
 		              <Cell
 		                id={u.id} 
@@ -19,7 +19,7 @@ class Board extends Component {
 		                value={u.value} 
 		              />
 		            );
-          		})*/
+          		})
 
 			)
 			)
