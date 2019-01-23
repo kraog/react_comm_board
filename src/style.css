@@ -1,0 +1,18 @@
+.symbol {
+  width: 60px;
+  height: 60px;
+}
+.symbol_dir {
+  width: 60px;
+  height: 60px;
+  background-color: #e91e6340;
+  display: flex;
+  justify-content: space-around;
+}
+.cell_image {
+  width: 58px;
+  height: 58px;
+}
+.board {
+  display: flex;	
+}

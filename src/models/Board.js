@@ -8,7 +8,7 @@ class Board extends Component {
 
 	render(){
 		return( 
-			React.createElement('div', {id: 'idss'},'div',
+			React.createElement('div', {id: 'board0',class:'board'},
 				this.props.elems.map(u => {
 		            return (
 		              <Cell
