@@ -1,10 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import configureStore from './store/configureStore';
+import {addCell} from './actions';
+import ButtonObject from './objectButtons.json';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+const state = configureStore();
+
+state.dispatch(addCell(ButtonObject));
+state.subscribe(() => {
+    // vemos el nuevo store
+    alert(state.getState());
+});
+ReactDOM.render(<App elemsList={state.cellsList} />, document.getElementById('root'));
+//ReactDOM.render(<App elems={state.cells.cellsList} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

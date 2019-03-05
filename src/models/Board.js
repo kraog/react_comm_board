@@ -24,27 +24,6 @@ class Board extends Component {
 			)
 			)
 	}
-	/*
-	return {
-		set(id, id_up, elems){
-			let board = document.createDocumentFragment();
-			let divButtons = document.createElement('div');
-			divButtons.setAttribute('id',id);
-			divButtons.setAttribute('class','board');
-			if(id != "0") {
-				divButtons.appendChild( Cell().set(0, id, BACKSRC, 'symbol_dir', id_up));
-			}
-			elems.forEach((elem) => {
-				if(elem.id_parent == id){
-		          divButtons.appendChild(Cell().set(elem.id, elem.id_parent, elem.src, elem.type, elem.value));
-				}
-	    });
-			board.appendChild(divButtons);
-		return board;
-	}
-
-	};*/
-
 };
 
 export default Board;

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import './App.css';
 import Board from './models/Board';
 import SpeechSynthesizer from './speechSynthesizer'
+import ButtonObject from './objectButtons.json';
 import './style.css'
 
 
 let phrase="";
-//const rootBoard = <Board id='idb' elems={ButtonObject}/>;
-
+const rootBoard = <Board id='idb' elems={ButtonObject}/>;
 const synthesizer = SpeechSynthesizer(window);
 const saySomething = (text) => {
 	if (synthesizer.isAvailable()) {
@@ -31,21 +32,17 @@ const saySomething = (text) => {
     //BoardBuilder(document).build(rootBoard,event.detail, Session.getBackPathId(),ButtonObject);
     //Session.getIntoPathId(event.detail);
   });
-  
-  
 class App extends Component {
   
-  render = () => {
+render() {
     return (
       <div className="App">
-      <input id="text" type="text" value={phrase} width="3000px"/>
+       <input id="text" type="text" value={phrase} width="3000px"/>
       <button id="btnSpeak"><img width="20px" height="20px" src="https://d30y9cdsu7xlg0.cloudfront.net/png/51498-200.png" /></button><br/>
-      <Board id='idb' elems={this.props.elemsList}/>
+      {rootBoard}
       </div>
     );
   }
-};
-
-
+}
 
 export default App;
