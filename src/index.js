@@ -13,10 +13,9 @@ const state = configureStore();
 state.dispatch(addCell(ButtonObject));
 state.subscribe(() => {
     // vemos el nuevo store
-    alert(state.getState());
+    alert("el estado es :" +state.getState());
 });
-ReactDOM.render(<App elemsList={state.cellsList} />, document.getElementById('root'));
-//ReactDOM.render(<App elems={state.cells.cellsList} />, document.getElementById('root'));
+ReactDOM.render(<App elemsList={state.getState().cellJSONlist} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
