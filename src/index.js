@@ -13,7 +13,7 @@ const state = configureStore();
 state.dispatch(addCell(ButtonObject));
 state.subscribe(() => {
     // vemos el nuevo store
-    alert("el estado es :" +state.getState());
+    alert(state.getState().cellJSONlist);
 });
 ReactDOM.render(<App elemsList={state.getState().cellJSONlist} />, document.getElementById('root'));
 

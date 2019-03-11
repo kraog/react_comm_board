@@ -11,7 +11,6 @@ let phrase="";
 const synthesizer = SpeechSynthesizer(window);
 const saySomething = (text) => {
 	if (synthesizer.isAvailable()) {
-    alert('SpeechSynthesizer speaking');
 	  synthesizer.speak(text);
     } else {
       alert('SpeechSynthesizer not available');
