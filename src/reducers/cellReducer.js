@@ -3,14 +3,12 @@ import initialState from './initialState';
 
 export default function cellReducer(state = initialState, action) {
     switch(action.type) {
-        
-        /* Add cells to the state array */
      
 		case "ADD_CELL": {
 			let cellList = [];
-			for(let cellbuffer in action.cellList){
-				cellList.push(cellbuffer);
-			}
+			action.cellList.map(u => {
+				cellList.push(u);
+			});
 			let newstate = {
 				phrase:state.phrase,
 				cellList:cellList
