@@ -1,0 +1,297 @@
+[
+	{
+		"id":"btnayudar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"ayudar",
+		"src":"./models/cellimg/ayudar.svg"
+    },
+    {
+		"id":"btnbien",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"bien",
+		"src":"./models/cellimg/bien.svg"
+    },
+    {
+		"id":"btncontar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"contar",
+		"src":"./models/cellimg/contar.svg"
+    },
+    {
+		"id":"btncuando",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"cuando",
+		"src":"./models/cellimg/cuando.svg"
+    },
+    {
+		"id":"btndar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"dar",
+		"src":"./models/cellimg/dar.svg"
+    },
+    {
+		"id":"btndejar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"dejar",
+		"src":"./models/cellimg/dejar.svg"
+    },
+    {
+		"id":"btndejar_colocar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"dejar_colocar",
+		"src":"./models/cellimg/dejar_colocar.svg"
+    },
+    {
+		"id":"btndejar_soltar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"dejar_soltar",
+		"src":"./models/cellimg/dejar_soltar.svg"
+    },
+    {
+		"id":"btndiferente",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"diferente",
+		"src":"./models/cellimg/diferente.svg"
+    },
+    {
+		"id":"btndonde",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"donde",
+		"src":"./models/cellimg/donde.svg"
+    },
+    {
+		"id":"btnellos",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"ellos",
+		"src":"./models/cellimg/ellos.svg"
+    },
+    {
+		"id":"btneso",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"eso",
+		"src":"./models/cellimg/eso.svg"
+    },
+    {
+		"id":"btn",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"ayudar",
+		"src":"./models/cellimg/ayudar.svg"
+    },
+    {
+		"id":"btnespejoparecer",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"espejo",
+		"src":"./models/cellimg/espejo.svg"
+    },
+    {
+		"id":"btnesperar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"esperar",
+		"src":"./models/cellimg/esperar.svg"
+    },
+    {
+		"id":"btnestar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"estar",
+		"src":"./models/cellimg/estar.svg"
+    },
+    {
+		"id":"btngustar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"gustar",
+		"src":"./models/cellimg/gustar.svg"
+    },
+    {
+		"id":"btnhacer",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"hacer",
+		"src":"./models/cellimg/hacer.svg"
+    },
+    {
+		"id":"btnir",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"ir",
+		"src":"./models/cellimg/ir.svg"
+    },
+    {
+		"id":"btnjugar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"jugar",
+		"src":"./models/cellimg/jugar.svg"
+    },
+    {
+		"id":"btnllevar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"llevar",
+		"src":"./models/cellimg/llevar.svg"
+    },
+    {
+		"id":"btnmal",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"mal",
+		"src":"./models/cellimg/mal.svg"
+    },
+    {
+		"id":"btnmas",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"mas",
+		"src":"./models/cellimg/mas.svg"
+    },
+    {
+		"id":"btnmenos",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"menos",
+		"src":"./models/cellimg/menos.svg"
+    },
+    {
+		"id":"btnmirar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"mirar",
+		"src":"./models/cellimg/mirar.svg"
+    },
+    {
+		"id":"btnmismo",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"mismo",
+		"src":"./models/cellimg/mismo.svg"
+    },
+    {
+		"id":"btnmucho",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"mucho",
+		"src":"./models/cellimg/mucho.svg"
+    },
+    {
+		"id":"btnno",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"no",
+		"src":"./models/cellimg/no.svg"
+    },
+    {
+		"id":"btnnosotros",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"nosotros",
+		"src":"./models/cellimg/nosotros.svg"
+    },
+    {
+		"id":"btnpensar",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"pensar",
+		"src":"./models/cellimg/pensar.svg"
+    },
+    {
+		"id":"btnpoco",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"poco",
+		"src":"./models/cellimg/poco.svg"
+    },
+    {
+		"id":"btnponer",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"poner",
+		"src":"./models/cellimg/poner.svg"
+    },
+    {
+		"id":"btnpor_que",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"por_que",
+		"src":"./models/cellimg/por_que.svg"
+    },
+    {
+		"id":"btnque",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"que",
+		"src":"./models/cellimg/que.svg"
+    },
+    {
+		"id":"btnquerer",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"querer",
+		"src":"./models/cellimg/querer.svg"
+    },
+    {
+		"id":"btnquien",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"quien",
+		"src":"./models/cellimg/quien.svg"
+    },
+    {
+		"id":"btnser",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"ser",
+		"src":"./models/cellimg/ser.svg"
+    },
+    {
+		"id":"btnsi",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"si",
+		"src":"./models/cellimg/si.svg"
+    },
+    {
+		"id":"btntener",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"tener",
+		"src":"./models/cellimg/tener.svg"
+    },
+    {
+		"id":"btntu",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"tu",
+		"src":"./models/cellimg/tu.svg"
+    },
+    {
+		"id":"btnya",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"ya",
+		"src":"./models/cellimg/ya.svg"
+    },
+    {
+		"id":"btnyo",
+		"id_parent":"0",
+		"type": "symbol",
+		"value":"yo",
+		"src":"./models/cellimg/yo.svg"
+    }
+]
+ 

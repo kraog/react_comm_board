@@ -16,11 +16,13 @@ class Cell extends Component {
 	              ):() =>document.dispatchEvent(
 	                new CustomEvent('say-something', { 'detail': this.props.value })
 	              ))},
-				<img className= 'cell_image' alt={this.props.value} src={this.props.src}/>) 			
+				<img className= 'cell_image' alt={this.props.value} style={{backgroundImage: 'url('+this.props.src+')'}}/>) 			
 			);
 				
 				
 	};
 	
 }
+
+
 export default Cell;

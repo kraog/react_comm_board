@@ -1,28 +1,16 @@
 import React, { Component } from 'react';
+import {connect} from "react-redux";
 import './App.css';
 import Board from './models/Board';
-import SpeechSynthesizer from './speechSynthesizer'
+import SpeakerBox from './models/SpeakerBox';
 import './style.css'
 
 
-let phrase="";
 //const rootBoard = <Board id='idb' elems={ButtonObject}/>;
 
-const synthesizer = SpeechSynthesizer(window);
-const saySomething = (text) => {
-	if (synthesizer.isAvailable()) {
-	  synthesizer.speak(text);
-    } else {
-      alert('SpeechSynthesizer not available');
-    }
-  };
 
 
-  document.addEventListener('say-something', (event) => {
-    event.preventDefault();
-    saySomething(event.detail);
-    phrase += event.detail;
-  });
+
   
   document.addEventListener('dir_go', (event) => {
     event.preventDefault();
@@ -37,8 +25,7 @@ class App extends Component {
   render = () => {
     return (
       <div className="App">
-      <input id="text" type="text" value={phrase} width="3000px"/>
-      <button id="btnSpeak"><img width="20px" height="20px" src="https://d30y9cdsu7xlg0.cloudfront.net/png/51498-200.png" /></button><br/>
+      <SpeakerBox text={this.props.text} onClick={this.props.clicker}/>
       <Board id='idb' elems={this.props.elemsList}/>
       </div>
     );
@@ -46,5 +33,12 @@ class App extends Component {
 };
 
 
+function mapStateToProps(state){
+	return {
+    elemsList: state.cellList,
+    text:state.phrase,
+	}
+}
 
-export default App;
+
+export default connect(mapStateToProps)(App);

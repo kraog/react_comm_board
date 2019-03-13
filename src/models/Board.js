@@ -8,7 +8,7 @@ class Board extends Component {
 
 	render(){
 		return( 
-			React.createElement('div', {id: 'board0',class:'board'},
+			React.createElement('div', {id: 'board0',className:'board'},
 				this.props.elems.map(u => {
 		            return (
 		              <Cell
@@ -16,7 +16,7 @@ class Board extends Component {
 		                id_parent={u.id_parent} 
 		                src={u.src} 
 		                type={u.type} 
-		                value={u.value} 
+										value={u.value}
 		              />
 		            );
           		})

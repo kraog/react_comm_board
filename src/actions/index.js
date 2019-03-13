@@ -1,7 +1,15 @@
-export const addCell =(cellJSONlist) => {
+export const addCell =(cellList) => {
     return {
 		type: "ADD_CELL",
-		payload: {cellJSONlist}
+		cellList: cellList
 		
 	}
 }
+export const addText =(phrase) => {
+	return {
+	type: "ADD_PHRASE",
+	phrase: {phrase}
+	
+}
+}
+
