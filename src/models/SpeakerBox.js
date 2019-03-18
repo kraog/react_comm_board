@@ -14,7 +14,7 @@ class SpeakerBox extends Component {
 		return(
 		
                 <div>
-                <input id="text" type="text" value={this.props.text} width="3000px"/>
+                <input id="text" className="textBox" value={this.props.text} width="3000px"/>
                 <button id="btnSpeak" onClick={() => this.props.onClicker(this.props.text)}>
                 <img width="20px" height="20px" src="https://d30y9cdsu7xlg0.cloudfront.net/png/51498-200.png" />
                 </button>

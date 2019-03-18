@@ -17,8 +17,6 @@ class Cell extends Component {
 					{this.props.value}
 				</div>) 			
 			);
-				
-				
 	};
 	
 }
