@@ -12,7 +12,10 @@ class Cell extends Component {
 				className: this.props.type, 
 				value: this.props.value,
 				onClick:(() =>this.props.onClickCell(this.props.value))},
-				<img className= 'cell_image' alt={this.props.value} src={this.props.src}/>) 			
+				<div>
+					<img className= 'cell_image' alt={this.props.value} src={this.props.src}/><br/>
+					{this.props.value}
+				</div>) 			
 			);
 				
 				
