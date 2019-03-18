@@ -14,9 +14,12 @@
     "yarnpkg": "^0.15.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "old_start": "react-scripts start",
+    "start": "react-app-rewired start --scripts-version react-scripts",
+    "old_build": "react-scripts build",
+    "build": "react-app-rewired build --scripts-version react-scripts",
+    "old_test": "react-scripts test",
+    "test": "react-app-rewired test --env=jsdom --scripts-version react-scripts",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,5 +30,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.1",
+    "react-app-rewired": "^2.1.1"
+  }
 }

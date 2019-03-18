@@ -12,7 +12,7 @@ class Cell extends Component {
 				className: this.props.type, 
 				value: this.props.value,
 				onClick:(() =>this.props.onClickCell(this.props.value))},
-				<img className= 'cell_image' alt={this.props.value} style={{backgroundImage: 'url('+this.props.src+')'}}/>) 			
+				<img className= 'cell_image' alt={this.props.value} src={this.props.src}/>) 			
 			);
 				
 				
