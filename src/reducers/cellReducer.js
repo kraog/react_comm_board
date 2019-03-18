@@ -24,6 +24,14 @@ export default function cellReducer(state = initialState, action) {
 			return newstate;
 		}
 
+		case "CLEAR_PHRASE": {
+			let newstate = {
+				phrase:"",
+				cellList:state.cellList
+			}
+			return newstate;
+		}
+
 		default: return state;
 	}
 }

@@ -4,6 +4,7 @@ import './App.css';
 import Board from './models/Board';
 import SpeakerBox from './models/SpeakerBox';
 import './style.css'
+import { clearText } from './actions';
 
 
 //const rootBoard = <Board id='idb' elems={ButtonObject}/>;
@@ -25,7 +26,7 @@ class App extends Component {
   render = () => {
     return (
       <div className="App">
-      <SpeakerBox text={this.props.text} onClick={this.props.clicker}/>
+      <SpeakerBox text={this.props.text} onClicker={this.props.clicker} onClear={this.props.clear}/>
       <Board id='idb' elems={this.props.elemsList}/>
       </div>
     );
@@ -41,4 +42,11 @@ function mapStateToProps(state){
 }
 
 
-export default connect(mapStateToProps)(App);
+function mapDispatchToProps(dispatch){
+	return {
+    clear:(text) =>dispatch(clearText(text.value))
+	}
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);

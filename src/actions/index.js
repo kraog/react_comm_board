@@ -10,6 +10,14 @@ export const addText =(phrase) => {
 	type: "ADD_PHRASE",
 	phrase: phrase
 	
+	}
 }
+export const clearText =() => {
+	return {
+	type: "CLEAR_PHRASE"	
+	}
 }
+
+
+
 
