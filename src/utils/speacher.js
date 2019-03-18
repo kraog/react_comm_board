@@ -2,7 +2,7 @@
 import SpeechSynthesizer from '../speechSynthesizer'
 
 const synthesizer = SpeechSynthesizer(window);
-const saySomething = (text) => {
+const say = (text) => {
 	if (synthesizer.isAvailable()) {
 	  synthesizer.speak(text);
     } else {
@@ -10,4 +10,4 @@ const saySomething = (text) => {
     }
   };  
 
-  export default saySomething;
+  export default say;

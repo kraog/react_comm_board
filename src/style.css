@@ -1,7 +1,14 @@
 .symbol {
-  width: 60px;
-  height: 60px;
 }
+.symbol:hover {
+  background-color: azure;
+  cursor: grab;
+}
+.symbol:active {
+  background-color: aquamarine;
+  cursor: grabbing;
+}
+
 .symbol_dir {
   width: 60px;
   height: 60px;
@@ -10,8 +17,8 @@
   justify-content: space-around;
 }
 .cell_image {
-  width: 58px;
-  height: 58px;
+  width: 50%;
+  height: 50%;
 }
 .board {
   display: grid;

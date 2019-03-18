@@ -5,7 +5,7 @@ import Board from './models/Board';
 import SpeakerBox from './models/SpeakerBox';
 import './style.css'
 import { clearText,addText } from './actions';
-import saySomething from './utils/speacher';
+import say from './utils/speacher';
   
   
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
   render = () => {
     return (
       <div className="App">
-      <SpeakerBox text={this.props.text} onClicker={saySomething} onClear={this.props.clear}/>
+      <SpeakerBox text={this.props.text} onClicker={say} onClear={this.props.clear}/>
       <Board id='idb' elems={this.props.elemsList} onClickCell={this.props.setText}/>
       </div>
     );
@@ -33,7 +33,7 @@ function mapDispatchToProps(dispatch){
 	return {
     clear:() =>dispatch(clearText()),
     setText:(text) =>{
-      saySomething(text);
+      say(text);
       dispatch(addText(text))
     }
 	}
