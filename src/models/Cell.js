@@ -11,11 +11,7 @@ class Cell extends Component {
 			React.createElement('div', {
 				className: this.props.type, 
 				value: this.props.value,
-				onClick:(this.props.type==="symbol_dir"?() => document.dispatchEvent(
-	                new CustomEvent('dir_go', { 'detail': this.props.value })
-	              ):() =>document.dispatchEvent(
-	                new CustomEvent('say-something', { 'detail': this.props.value })
-	              ))},
+				onClick:(() =>this.props.onClickCell(this.props.value))},
 				<img className= 'cell_image' alt={this.props.value} style={{backgroundImage: 'url('+this.props.src+')'}}/>) 			
 			);
 				

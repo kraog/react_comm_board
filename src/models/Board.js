@@ -17,6 +17,7 @@ class Board extends Component {
 		                src={u.src} 
 		                type={u.type} 
 										value={u.value}
+										onClickCell={this.props.onClickCell}
 		              />
 		            );
           		})

@@ -4,21 +4,8 @@ import './App.css';
 import Board from './models/Board';
 import SpeakerBox from './models/SpeakerBox';
 import './style.css'
-import { clearText } from './actions';
-
-
-//const rootBoard = <Board id='idb' elems={ButtonObject}/>;
-
-
-
-
-  
-  document.addEventListener('dir_go', (event) => {
-    event.preventDefault();
-    //rootBoard.removeChild(rootBoard.firstChild);
-    //BoardBuilder(document).build(rootBoard,event.detail, Session.getBackPathId(),ButtonObject);
-    //Session.getIntoPathId(event.detail);
-  });
+import { clearText,addText } from './actions';
+import saySomething from './utils/speacher';
   
   
 class App extends Component {
@@ -26,8 +13,8 @@ class App extends Component {
   render = () => {
     return (
       <div className="App">
-      <SpeakerBox text={this.props.text} onClicker={this.props.clicker} onClear={this.props.clear}/>
-      <Board id='idb' elems={this.props.elemsList}/>
+      <SpeakerBox text={this.props.text} onClicker={saySomething} onClear={this.props.clear}/>
+      <Board id='idb' elems={this.props.elemsList} onClickCell={this.props.setText}/>
       </div>
     );
   }
@@ -44,7 +31,11 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
 	return {
-    clear:(text) =>dispatch(clearText(text.value))
+    clear:() =>dispatch(clearText()),
+    setText:(text) =>{
+      saySomething(text);
+      dispatch(addText(text))
+    }
 	}
 }
 
