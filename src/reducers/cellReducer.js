@@ -19,7 +19,7 @@ export default function cellReducer(state = initialState, action) {
 		case "ADD_PHRASE": {
 			let newstate = {
 				phrase:(state.phrase + " " + action.phrase),
-				cellList:state.cellsList
+				cellList:state.cellList
 			}
 			return newstate;
 		}

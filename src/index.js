@@ -29,8 +29,6 @@ document.addEventListener('say-something', (event) => {
   
 state.dispatch(addCell(ObjectButtonsArasaac));
 state.subscribe(() => {
-    // vemos el nuevo store
-    alert(state.getState());
 });
 ReactDOM.render(<Provider store={state}><App clicker={saySomething}/></Provider>, document.getElementById('root'));
 

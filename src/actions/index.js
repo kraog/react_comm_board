@@ -8,7 +8,7 @@ export const addCell =(cellList) => {
 export const addText =(phrase) => {
 	return {
 	type: "ADD_PHRASE",
-	phrase: {phrase}
+	phrase: phrase
 	
 }
 }
