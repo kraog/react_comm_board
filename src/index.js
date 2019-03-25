@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 const state = configureStore();
   
 state.dispatch(addCell(ObjectButtonsArasaac));
-state.subscribe(() => {
+state.subscribe(() => { console.log(state.getState().phrase);
 });
 ReactDOM.render(<Provider store={state}><App/></Provider>, document.getElementById('root'));
 
