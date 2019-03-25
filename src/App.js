@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {connect} from "react-redux";
 import './App.css';
 import Board from './models/Board';
@@ -8,17 +8,15 @@ import { clearText,addText } from './actions';
 import say from './utils/speacher';
   
   
-class App extends Component {
+function App(props) {
   
-  render = () => {
     return (
       <div className="App">
-      <SpeakerBox text={this.props.text} onClicker={say} onClear={this.props.clear}/>
-      <Board id='idb' elems={this.props.elemsList} onClickCell={this.props.setText}/>
+      <SpeakerBox text={props.text} onClicker={say} onClear={props.clear}/>
+      <Board id='idb' elems={props.elemsList} onClickCell={props.setText}/>
       </div>
     );
-  }
-};
+  };
 
 
 function mapStateToProps(state){

@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Cell  from './Cell'
 
-
-const BACKSRC = 'https://cdn4.iconfinder.com/data/icons/folders-directories-1/32/file-document-directory-folio-folder-up-512.png';
 // Represents a Board or a subBoard with its Cells
-class Board extends Component {
-
-	render(){
+function Board(props) {
 		return( 
 			React.createElement('div', {id: 'board0',className:'board'},
-				this.props.elems.map(u => {
+				props.elems.map(u => {
 		            return (
 		              <Cell
 		                id={u.id} 
@@ -17,14 +13,12 @@ class Board extends Component {
 		                src={u.src} 
 		                type={u.type} 
 										value={u.value}
-										onClickCell={this.props.onClickCell}
+										onClickCell={props.onClickCell}
 		              />
 		            );
-          		})
-
+          	})
+				)
 			)
-			)
-	}
 };
 
 export default Board;

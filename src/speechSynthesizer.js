@@ -7,7 +7,9 @@ let SpeechSynthesizer = window => {
     },
     speak(text) {
       if (this.isAvailable() && text) {
-        synth.speak(new SpeechSynthesisUtterance(text));
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'es-Es';
+        synth.speak(utterance);
       }
     }
   };

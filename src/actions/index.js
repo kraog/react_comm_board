@@ -1,15 +1,13 @@
 export const addCell =(cellList) => {
     return {
 		type: "ADD_CELL",
-		cellList: cellList
-		
+		cellList
 	}
 }
 export const addText =(phrase) => {
 	return {
 	type: "ADD_PHRASE",
-	phrase: phrase
-	
+	phrase
 	}
 }
 export const clearText =() => {
