@@ -1,16 +1,15 @@
 import React from 'react';
-
+import {connect} from "react-redux";
+import { clearText} from '../actions';
+import say from '../utils/speacher';
 
     
-const clearText = (textContainer) =>{
-    clearText.value = "";
-}
 //Represents a single speaker Box in a Board
 function SpeakerBox(props)  {
     return(
             <div>
             <input id="text" className="textBox" value={props.text} width="3000px"/>
-            <button id="btnSpeak" onClick={() => props.onClicker(props.text)}>
+            <button id="btnSpeak" onClick={() => say(props.text)}>
             <img width="20px" height="20px" src="https://d30y9cdsu7xlg0.cloudfront.net/png/51498-200.png" />
             </button>
             <button id="btnClear" onClick={props.onClear}>
@@ -21,4 +20,18 @@ function SpeakerBox(props)  {
 }
 
 
-export default SpeakerBox;
+function mapStateToProps(state){
+	return {
+    elemsList: state.cellList,
+    text:state.phrase,
+	}
+}
+
+function mapDispatchToProps(dispatch){
+	return {
+    onClear:() =>dispatch(clearText())
+	}
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(SpeakerBox);

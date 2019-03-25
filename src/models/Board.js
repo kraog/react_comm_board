@@ -13,7 +13,6 @@ function Board(props) {
 		                src={u.src} 
 		                type={u.type} 
 										value={u.value}
-										onClickCell={props.onClickCell}
 		              />
 		            );
           	})
